@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-border">
+        <div class="login-menu">
+            
+            <h1 id="greetLabel">Welcome</h1>
+           
+            <div class="info-part">
+                 <img class="user-image" src="icons/user.png" alt="">
+                <div class="name-password">
+                    <p>Name</p>
+                        <input class="input-bar" type="text" placeholder="Username" id="username">
+                </div>
+                    
+                <div class="name-password">
+                    <p>Password</p>
+                        <input class="input-bar" type="password" placeholder="Enter Password" id="password">
+                </div>
+                    
+                <button onclick="password()" class="login-button">Login</button>
+            </div>
+            
+           
+          
+            
+
+
+
+
+        </div>
+
+        
+
+
+
+    </div>
+    
+        <div class="bottom-row">
+            <img class="my-socials" src="icons/facebook.png" alt="Facebook" >
+            <img class="my-socials" src="icons/instagram.png" alt="Instagram">
+            <img class="my-socials" src="icons/tik-tok.png" alt="Titok">
+
+        </div>
+
+
+
+</body>
+
+
+<script>
+    function password(){
+        const myPassword = document.getElementById("password").value;
+        const myUsername = document.getElementById("username");
+        const result = document.getElementById("greetLabel");
+
+        let password = "Jessel2023";
+
+
+
+        if(myPassword !== password){
+            result.textContent = "Wrong Password";
+            result.style.color="red";
+            count++;
+            
+         
+         
+        } else{
+            result.textContent = "Welcome Back Glenn";
+            result.style.color="green";
+            window.open("main.html");
+        }
+
+
+
+    }
+
+
+
+</script>
+</html>
