@@ -57,24 +57,26 @@
 <script>
     function password(){
         const myPassword = document.getElementById("password").value;
-        const myUsername = document.getElementById("username");
+        const myUsername = document.getElementById("username").value;
         const result = document.getElementById("greetLabel");
 
         let password = "Jessel2023";
 
+        if(myUsername === " "){
+            result.textContent = "Please enter your username";
+            result.style.color="red";
+        }
 
-
-        if(myPassword !== password){
+        if(myPassword !== password || myPassword === " "){
             result.textContent = "Wrong Password";
             result.style.color="red";
-            count++;
             
          
          
         } else{
             result.textContent = "Welcome Back Glenn";
             result.style.color="green";
-            window.open("main.html");
+            window.location.href = "main.html";
         }
 
 

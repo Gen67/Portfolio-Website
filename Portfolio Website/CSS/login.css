@@ -35,7 +35,7 @@ body{
     background: #ed724c;
     background: linear-gradient(90deg,rgb(50, 195, 221) 0%, rgba(255, 119, 56, 0.774) 50%, rgb(10, 6, 34) 94%);
     opacity: 0.8;
-    box-shadow: rgba(255, 255, 255, 0.658) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(255, 255, 255, 0.356) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
 }
 
